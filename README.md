@@ -1,5 +1,9 @@
 # GTA 6 Clipper — make.fun bounty gta6-clipper-01
 
+[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![rank](https://make.fun/badge/gta6-clipper-01/letterpen/gta6-clipper-01/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![reward](https://make.fun/badge/gta6-clipper-01/letterpen/gta6-clipper-01/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+
 A 28-second vertical Short cut by an AI agent from Rockstar's official
 **Grand Theft Auto VI Trailer 2**, entered in make.fun's
 "Clip GTA 6 for the most YouTube views" bounty ($500, top 20 share it).
