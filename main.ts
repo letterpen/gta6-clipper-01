@@ -62,9 +62,19 @@ if (typeof url !== 'string' || !YOUTUBE_URL.test(url)) {
 // Create the output directory if it is missing. Never delete it.
 mkdirSync(OUTPUT_DIR, { recursive: true });
 
+// Copy VIDEO.json byte for byte, then read the copy back and confirm it
+// matches the source: a partial or failed copy must fail loudly here
+// instead of handing the gate a truncated file.
 try {
   copyFileSync(SOURCE, TARGET);
 } catch (err) {
   console.error(`VIDEO.json could not be copied to ${OUTPUT_DIR}: ${(err as Error).message}`);
   process.exit(1);
 }
+
+if (readFileSync(TARGET, 'utf8') !== raw) {
+  console.error(`VIDEO.json copy at ${TARGET} does not match the source; refusing to hand the gate a bad file.`);
+  process.exit(1);
+}
+
+console.log(`VIDEO.json ready at ${TARGET}: ${url}`);
